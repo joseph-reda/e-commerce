@@ -12,7 +12,7 @@ function ProductPage() {
     <div>
       <Announce />
       <Navbar />
-      <div className="flex flex-col lg:flex-row gap-20 m-[80px] items-center justify-cente">
+      <div className="flex flex-col lg:flex-row gap-20 m-[20px] sm:m-[80px] items-center justify-cente">
         <div className="">
           <img
             src={img}
@@ -20,7 +20,7 @@ function ProductPage() {
             className=" shadow-lg rounded-xl w-[550px] h-[550px] hover:scale-105 ease-in-out duration-200"
           />
         </div>
-        <div className="lg:w-[80%] ">
+        <div className="lg:w-[80%]">
           <h2 className="text-[50px]">Product</h2>
           <p className="text-[18px] py-5 lg:w-[70%]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum

@@ -1,6 +1,5 @@
 import React from "react";
-
-import "../App.css"
+import "../App.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="relative">
       <div className="navbar h-[65px] shadow-md z-10 flex items-center gap-5 pl-5">
         <div className="flex flex-1">
           <ul className="flex gap-5">
@@ -39,7 +38,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="cursor-pointer">
+          <div className="cart cursor-pointer">
             <Link to="/cart">
               <FontAwesomeIcon
                 style={{ fontSize: "18px" }}

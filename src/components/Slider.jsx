@@ -18,11 +18,11 @@ function Slider() {
   const activeSlide = slides.filter((_, index) => index === slidesActive);
 
   return (
-    <div className="p-[50px]">
+    <div className="p-[5px] sm:p-[50px]">
       {activeSlide.map((slide) => (
         <div
           key={slide.id}
-          className="grid grid-rows lg:grid-cols-3 justify-between items-center lg:gap-[100px] gap-5"
+          className="sm:grid hidden grid-rows lg:grid-cols-3 justify-between items-center lg:gap-[100px] gap-5"
         >
           <div className="flex items-center justify-center z-10 gap-5 px-10 lg:col-span-2">
             <div className="leftArrow" onClick={handlePrevSlide}>
